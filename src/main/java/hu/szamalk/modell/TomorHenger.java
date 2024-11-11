@@ -12,6 +12,10 @@ public class TomorHenger extends MertaniHenger{
         this.fajsuly = fajsuly;
     }
 
+    public double suly(){
+        return 0.0;
+    }
+
     public double getFajsuly() {
         return fajsuly;
     }
