@@ -52,12 +52,6 @@ public class HengerProgram {
         }
         System.out.println("Átlag térfogat: " + atlagTerfogat());
         System.out.println("Csövek súlya: " + csovekSulya());
-//        for (MertaniHenger henger : this.lista()) {
-//            System.out.println(henger);
-//        }
-
-
-
     }
 
     public static void main(String[] args) {

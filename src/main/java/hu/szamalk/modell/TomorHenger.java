@@ -13,7 +13,7 @@ public class TomorHenger extends MertaniHenger{
     }
 
     public double suly(){
-        return 0.0;
+        return super.terfogat() * fajsuly;
     }
 
     public double getFajsuly() {
