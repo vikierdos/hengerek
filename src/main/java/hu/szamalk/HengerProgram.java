@@ -44,6 +44,7 @@ public class HengerProgram {
         for (MertaniHenger henger : hengerek) {
             System.out.println(henger);
         }
+        System.out.println("Átlag térfogat: " + atlagTerfogat());
 //        for (MertaniHenger henger : this.lista()) {
 //            System.out.println(henger);
 //        }
