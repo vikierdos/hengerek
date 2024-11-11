@@ -13,10 +13,21 @@ public class HengerProgram {
 
     public HengerProgram() {
         hengerek = new ArrayList<>();
+        hengerek.add(new MertaniHenger(1,1));
+        hengerek.add(new TomorHenger(1,1));
+        hengerek.add(new TomorHenger(1,1, .5));
+        hengerek.add(new LyukasHenger(1,1,.5));
+        hengerek.add(new LyukasHenger(1,1,.1));
+        hengerek.add(new LyukasHenger(1,1,.9));
     }
 
     public double atlagTerfogat(){
-        return 0.0;
+        int db = MertaniHenger.getHengerDb();
+        double osszt = 0;
+        for (MertaniHenger henger : hengerek) {
+            osszt += henger.terfogat();
+        }
+        return osszt/db;
     }
 
     public double csovekSulya(){
@@ -28,16 +39,16 @@ public class HengerProgram {
     }
 
     public void run(){
-
-        MertaniHenger mh = new MertaniHenger(1,1);
-        TomorHenger th = new TomorHenger(1,1);
-        LyukasHenger lyh = new LyukasHenger(1,1,.5);
-
-        System.out.println("mh = " + mh);
-        System.out.println("th = " + th);
-        System.out.println("lyh = " + lyh);
         int db = MertaniHenger.getHengerDb();
-        System.out.printf("A feladatban használt hengerek (%d db): ", db);
+        System.out.printf("A feladatban használt hengerek (%d db):\n", db);
+        for (MertaniHenger henger : hengerek) {
+            System.out.println(henger);
+        }
+//        for (MertaniHenger henger : this.lista()) {
+//            System.out.println(henger);
+//        }
+
+
 
     }
 
