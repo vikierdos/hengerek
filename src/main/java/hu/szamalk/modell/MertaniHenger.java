@@ -10,7 +10,7 @@ public class MertaniHenger {
     }
 
     public double terfogat(){
-        return -1;
+        return 0.0;
     }
 
     public static int getHengerDarab() {

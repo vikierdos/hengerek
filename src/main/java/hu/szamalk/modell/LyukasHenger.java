@@ -13,7 +13,7 @@ public class LyukasHenger extends TomorHenger{
     }
 
     public double terfogat(){
-        return -1;
+        return 0.0;
     }
 
     public double getFalvastagsag() {
