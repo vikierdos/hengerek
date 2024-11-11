@@ -13,12 +13,12 @@ public class HengerProgram {
 
     public HengerProgram() {
         hengerek = new ArrayList<>();
-        hengerek.add(new MertaniHenger(1,1));
-        hengerek.add(new TomorHenger(1,1));
-        hengerek.add(new TomorHenger(1,1, .5));
-        hengerek.add(new LyukasHenger(1,1,.5));
-        hengerek.add(new LyukasHenger(1,1,.1));
-        hengerek.add(new LyukasHenger(1,1,.9));
+//        hengerek.add(new MertaniHenger(1,1));
+//        hengerek.add(new TomorHenger(1,1));
+//        hengerek.add(new TomorHenger(1,1, .5));
+//        hengerek.add(new LyukasHenger(1,1,.5));
+//        hengerek.add(new LyukasHenger(1,1,.1));
+        hengerek.add(new LyukasHenger(1,1,0));
     }
 
     public double atlagTerfogat(){
@@ -34,7 +34,7 @@ public class HengerProgram {
         double ossz = 0;
         for (MertaniHenger henger : hengerek) {
             if(henger instanceof LyukasHenger){
-                ossz += ((LyukasHenger)henger).suly();
+                ossz += ((LyukasHenger) henger).suly();
             }
         }
         return ossz;

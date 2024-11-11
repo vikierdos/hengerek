@@ -12,8 +12,14 @@ public class LyukasHenger extends TomorHenger{
         this.falvastagsag = falvastagsag;
     }
 
+
+    @Override
     public double terfogat(){
-        return 0.0;
+        double terfogatA = super.terfogat();
+        double sugarB = super.getSugar() - falvastagsag;
+        double terfogatLy = super.terfogat(sugarB, super.getMagassag());
+
+        return terfogatA-terfogatLy;
     }
 
     public double getFalvastagsag() {

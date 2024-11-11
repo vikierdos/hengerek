@@ -11,6 +11,10 @@ public class MertaniHenger {
     }
 
     public double terfogat(){
+        return terfogat(sugar, magassag);
+    }
+
+    public double terfogat(double sugar, double magassag){
         return Math.pow(sugar, 2) * Math.PI * magassag;
     }
 
